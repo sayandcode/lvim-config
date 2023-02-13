@@ -1,0 +1,34 @@
+{
+  "New .module.scss file": {
+    "prefix": "n",
+    "body": [
+      ".container {",
+      "\t$1",
+      "}"
+    ],
+    "description": "Creates a .container class, which is useful for new .module.scss files"
+  },
+  "Media query mobile breakpoint": {
+    "prefix": "mdm",
+    "body": [
+      "@media (max-width: globals.\\$mobile-breakpoint) {",
+      "\t$1",
+      "}"
+    ],
+    "description": "Create media query with mobile breakpoint from global styles"
+  },
+  "Media query desktop breakpoint": {
+    "prefix": "mdd",
+    "body": [
+      "@media (min-width: calc(globals.\\$mobile-breakpoint + 1px)) {",
+      "\t$1",
+      "}"
+    ],
+    "description": "Create media query with desktop breakpoint from global styles"
+  },
+  "Import globals": {
+    "prefix": "gl",
+    "body": "@use '~styles/globals';\n",
+    "description": "Import global scss variables"
+  }
+}

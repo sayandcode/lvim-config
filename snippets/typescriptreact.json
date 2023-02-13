@@ -1,0 +1,45 @@
+{
+  "React Functional Component": {
+    "prefix": "rf",
+    "body": [
+      "import styles from './index.module.scss'",
+      "",
+      "function $1() {",
+      "\treturn (",
+      "\t\t<div className={styles.container}>",
+      "\t\t\t${1:Filename}Content",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "\nexport default $1"
+    ],
+    "description": "Creates new React Functional component with modular styles"
+  },
+  "React Functional Component withPropTypes": {
+    "prefix": "rfp",
+    "body": [
+      "import styles from './index.module.scss'",
+      "",
+      "type Props = {",
+      "$2",
+      "}",
+      "",
+      "function $1({}: Props ) {",
+      "\treturn (",
+      "\t\t<div className={styles.container}>",
+      "\t\t\t${1:Filename}content",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "\nexport default $1"
+    ],
+    "description": "Creates new React Functional component with modular styles"
+  },
+  "Classname from modular css": {
+    "prefix": "cls",
+    "body": [
+      "className={styles.$1}"
+    ],
+    "description": "Adds className derived from modular styles"
+  }
+}
